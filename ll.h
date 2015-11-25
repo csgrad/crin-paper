@@ -1,3 +1,8 @@
+#ifndef LL_H
+#define LL_H
+
+#include <stdbool.h>
+
 /*
  * Author: Jason Ernst
  * Date Started: Friday December 7th, 2007
@@ -27,5 +32,4 @@ int numNodes(llnode *head);
 
 bool removeNode(llnode **head, int data);
  
-
-
+#endif

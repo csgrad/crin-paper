@@ -10,6 +10,7 @@
 
 #include <stdlib.h>   /* malloc, NULL */
 #include <stdio.h>    /* printf, scanf for testing */
+#include <stdbool.h>
 #include "ll.h"       /* structure definition for ll */
 
 /*

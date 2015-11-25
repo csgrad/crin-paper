@@ -3,11 +3,14 @@
  * Date Started: Tuesday December 11th, 2007
  * Reduction Algorithm
  */
-
-
-#include "hypergraph.c"
+#include "hypergraph.h"
+#include "ll.h"
 #include "reduction.h"
-#include "graph_generation.c"
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
 
 hypergraph * reduction(hypergraph * H, hypergraph * G)
 {

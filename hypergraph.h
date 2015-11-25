@@ -1,3 +1,8 @@
+#ifndef HYPERGRAPH_H
+#define HYPERGRAPH_H
+
+#include "ll.h"
+
 /*
  * Author: Jason Ernst
  * Date Started: Tuesday December 11th, 2007
@@ -30,6 +35,7 @@ typedef struct hgraph
   edgeSet * edgeSets;
 } hypergraph;
 
+hypergraph * copyHyperGraph(hypergraph * H);
 hypergraph * loadHyperGraph(char * file);
 hypergraph * newHyperGraph();
 void displayHyperGraph(hypergraph * h, char * name);
@@ -42,11 +48,13 @@ edgeSet * appendUniqueEdgeSet(edgeSet **head, int id);
 int numEdges(edgeSet * head);
 edgeSet * findEdge(edgeSet *head, int id);
 edgeSet * copyEdgeSets(edgeSet * head);
+int degree(hypergraph *h, int u, int v);
 void displayEdge(edgeSet *edge);
 void displayEdges(edgeSet * head);
 void freeEdgeSets(edgeSet * head);
 bool removeEdgeSet(edgeSet **head, int id);
 edgeSet * edgesContainingVertex(edgeSet * E, int v_id);
+edgeSet * edgesContainingUV(edgeSet * E, int u_id, int v_id);
 
 void removeEdgeFromVertices(vertexSet * head, int id);
 void addEdgetoVertices(edgeSet * edge, vertexSet * head);
@@ -66,3 +74,7 @@ void displayVertices(vertexSet * head);
 void freeVertexSets(vertexSet * head);
 bool removeVertexSet(vertexSet **head, int id);
 bool equalVertices(vertexSet * v1, vertexSet * v2);
+
+hypergraph * sortHyperGraph(hypergraph * H);
+
+#endif

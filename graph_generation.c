@@ -15,6 +15,11 @@
  * a random hypergraph
  */
 
+#include "hypergraph.h"
+#include "ll.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
 #include <time.h>
 
 /*

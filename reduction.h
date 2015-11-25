@@ -1,3 +1,6 @@
+#ifndef REDUCTION_H
+#define REDUCTION_H
+
 /*
  * Author: Jason Ernst
  * Date Started: Tuesday December 11th, 2007
@@ -19,3 +22,5 @@ bool rule1(hypergraph * H, hypergraph * G, edgeSet ** EprimeBar);
 bool rule2(hypergraph * H, hypergraph * G, edgeSet ** EprimeBar);
 bool rule3(hypergraph * H, hypergraph * G, edgeSet ** EprimeBar);
 bool rule4(hypergraph * H, hypergraph * G, edgeSet ** EprimeBar);
+
+#endif

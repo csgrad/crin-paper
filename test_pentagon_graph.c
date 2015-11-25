@@ -9,7 +9,12 @@
  * Date started: Monday, March 3rd, 2008
  */
 
-#include "reduction.c"
+#include "hypergraph.h"
+#include "graph_generation.h"
+#include "reduction.h"
+#include <stdio.h>
+#include <sys/types.h>
+#include <sys/times.h>
 
 int main(void)
 {

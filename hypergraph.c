@@ -695,7 +695,7 @@ hypergraph * loadHyperGraph(char * file)
 /*
  * displays the edges and vertices of a hyper graph
  */
-void displayHyperGraph(hypergraph * h, const char * name)
+void displayHyperGraph(hypergraph * h, char * name)
 {
   if(h!=NULL)
   {
